@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Laundry Shop - Fast & Affordable Service</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="services.html">🧽 Services</a>
+    <a href="reservation.html">📅 Reserve</a>
+    <a href="instructions.html">📖 Instructions</a>
+    <a href="testimonials.html">⭐ Testimonials</a>
+    <a href="contact.html">📞 Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Hero Section -->
+    <h1>🧺 Welcome to My Laundry Shop</h1>
+    <p style="font-size: 18px; color: #ff4d6d; font-weight: bold;">Fast, Clean, and Affordable Laundry Service</p>
+    <p><small>⏰ Open Daily: 8 AM – 8 PM</small></p>
+
+    <!-- Call to Action Buttons -->
+    <div style="margin: 30px 0;">
+      <a class="button" href="reservation.html">📋 Reserve Now</a>
+      <a class="button" href="services.html" style="background: #ff6b9d;">🧽 View Services</a>
+    </div>
+
+    <!-- QR Code Section -->
+    <div style="margin: 40px auto; padding: 30px; background: white; border-radius: 15px; max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <h3>📱 Quick Reservation</h3>
+      <p style="color: #666; margin-bottom: 20px;">Scan with your phone to reserve instantly!</p>
+      <div id="qrcode" style="display: flex; justify-content: center; background: white; padding: 15px; border-radius: 10px;"></div>
+      <p style="color: #999; font-size: 12px; margin-top: 15px;">Or tap "Reserve Now" button above</p>
+    </div>
+
+    <!-- Features Section -->
+    <h2 style="margin-top: 50px;">Why Choose Us?</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <h3>⚡ Fast Service</h3>
+        <p>Get your laundry done quickly with our efficient process.</p>
+      </div>
+      <div class="card">
+        <h3>💰 Affordable Prices</h3>
+        <p>Best rates in town for quality laundry service.</p>
+      </div>
+      <div class="card">
+        <h3>🧼 Quality Care</h3>
+        <p>Your clothes are treated with utmost care and attention.</p>
+      </div>
+      <div class="card">
+        <h3>📞 Customer Support</h3>
+        <p>24/7 support to answer all your questions.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 My Laundry Shop. All rights reserved.</p>
+    <p>📞 Phone: +63-917-XXX-XXXX | 📧 Email: info@mylaundryshop.com</p>
+    <p>📍 Address: 123 Clean Street, Your City, Philippines</p>
+  </footer>
+
+  <script>
+    // Generate QR Code
+    new QRCode(document.getElementById("qrcode"), {
+      text: window.location.origin + "/laundry-website/qr-redirect.html",
+      width: 250,
+      height: 250,
+      colorDark: "#ff4d6d",
+      colorLight: "#ffe6f0"
+    });
+  </script>
+
+</body>
+</html>
